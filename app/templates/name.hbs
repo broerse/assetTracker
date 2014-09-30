@@ -1,0 +1,17 @@
+<h2>Add a new Name</h2>
+<ul>
+  <li>
+    {{input value=name placeholder="First Name"}}
+  </li>
+  <li>
+    <button {{action "addName"}} >Add</button>
+  </li>
+</ul>
+
+<section>
+  {{#if model}}
+    {{#each item in model}}
+      <div>{{item}}</div>
+    {{/each}}
+  {{/if}}
+</section>
