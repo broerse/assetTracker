@@ -9,9 +9,7 @@
 </ul>
 
 <section>
-  {{#if model}}
-    {{#each item in model}}
-      <div>{{item}}</div>
-    {{/each}}
-  {{/if}}
+  {{#each}}
+    <div>{{first}}</div>
+  {{/each}}
 </section>
